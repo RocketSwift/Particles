@@ -53,48 +53,27 @@ class FireScene: SKScene {
 }
 
 
-class SnowParticlesViewController: UIViewController {
+class ParticlesViewController: UIViewController, UIGestureRecognizerDelegate {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        if let view = self.view as? SKView {
-            let scene = SnowScene(size: view.bounds.size)
-            scene.scaleMode = .aspectFill
-            view.ignoresSiblingOrder = true
-            view.showsFPS = false
-            view.showsNodeCount = false
-            view.showsPhysics = false
-            
-            view.presentScene(scene)
-        }
-    }
-}
-
-class FireParticlesViewController: UIViewController {
+    var sceneType = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         if let view = self.view as? SKView {
-            let scene = FireScene(size: view.bounds.size)
-            scene.scaleMode = .aspectFill
-            view.ignoresSiblingOrder = true
-            view.showsFPS = false
-            view.showsNodeCount = false
-            view.showsPhysics = false
+            let scene: SKScene
             
-            view.presentScene(scene)
-        }
-    }
-}
-
-class SparkParticlesViewController: UIViewController, UIGestureRecognizerDelegate {
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        if let view = self.view as? SKView {
-            let scene = SparkScene(size: view.bounds.size)
+            if sceneType == "fire" {
+                scene = FireScene(size: view.bounds.size)
+            } else if sceneType == "snow" {
+                scene = SnowScene(size: view.bounds.size)
+            } else if sceneType == "spark" {
+                scene = SparkScene(size: view.bounds.size)
+            } else {
+                print (sceneType)
+                fatalError()
+            }
+            
             scene.scaleMode = .aspectFill
             view.ignoresSiblingOrder = true
             view.showsFPS = false
@@ -108,10 +87,33 @@ class SparkParticlesViewController: UIViewController, UIGestureRecognizerDelegat
 
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
+    
+    
+    @IBAction func snowTapped(_ sender: Any) {
+        showVC(vcName: "snow")
+    }
+    
+    
+    @IBAction func sparkTapped(_ sender: Any) {
+        showVC(vcName: "spark")
+    }
+    
+    @IBAction func fireTapped(_ sender: Any) {
+        showVC(vcName: "fire")
+    }
+    
+    func showVC (vcName: String){
+        let story = UIStoryboard(name: "Main", bundle: nil)
+        let vc = story.instantiateViewController(withIdentifier: "particles")
+        let particlesVC = vc as! ParticlesViewController
+        particlesVC.sceneType = vcName
+        navigationController?.pushViewController(particlesVC, animated: true)
+    }
 }
+
