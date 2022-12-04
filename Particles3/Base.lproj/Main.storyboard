@@ -17,30 +17,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JV1-pl-Dfa">
-                                <rect key="frame" x="146" y="245" width="66" height="35"/>
+                                <rect key="frame" x="147" y="245" width="64" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Snow"/>
+                                <buttonConfiguration key="configuration" style="plain" title="snow"/>
                                 <connections>
-                                    <action selector="snowTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F17-rR-2EM"/>
+                                    <action selector="snowTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JOW-I7-oKl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EO3-Re-1Oj">
-                                <rect key="frame" x="145" y="357" width="69" height="35"/>
+                                <rect key="frame" x="146" y="357" width="67" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Spark"/>
+                                <buttonConfiguration key="configuration" style="plain" title="spark"/>
                                 <connections>
-                                    <action selector="sparkTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="98A-7E-wkE"/>
+                                    <action selector="sparkTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XVT-R6-y3W"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCr-91-POI">
-                                <rect key="frame" x="161" y="456" width="53" height="35"/>
+                                <rect key="frame" x="163" y="456" width="49" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Fire"/>
+                                <buttonConfiguration key="configuration" style="plain" title="fire"/>
                                 <connections>
-                                    <action selector="fireTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eEC-MA-h8n"/>
+                                    <action selector="fireTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZmS-mD-aRx"/>
                                 </connections>
                             </button>
                         </subviews>

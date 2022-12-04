@@ -35,25 +35,39 @@ class SparkScene: SKScene {
 
 class FireScene: SKScene {
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    
+    
+    //    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    //        if let touch = touches.first {
+    //            let location = touch.location(in: self)
+    //            if let particles = SKEmitterNode(fileNamed: "fire") {
+    //                particles.position.y = location.y
+    //                particles.position.x = location.x
+    //                addChild(particles)
+    //            }
+    //        }
+    //    }
+
+    
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
-            let location = touch.location(in: self)
-            if let particles = SKEmitterNode(fileNamed: "fire") {
-                particles.position.y = location.y
-                particles.position.x = location.x
-                addChild(particles)
-            }
-        }
-    }
+                 let location = touch.location(in: self)
+                 if let particles = SKEmitterNode(fileNamed: "fire") {
+                     particles.position = location
+                     addChild(particles)
+                 }
+             }
+         }
+    
     
     override func sceneDidLoad() {
         backgroundColor = .darkGray
-
     }
 }
 
 
-class ParticlesViewController: UIViewController, UIGestureRecognizerDelegate {
+
+class ParticlesViewController: UIViewController {
     
     var sceneType = ""
     
@@ -94,16 +108,21 @@ class ViewController: UIViewController {
     }
     
     
+//    @IBAction func buttonTapped(_ sender: UIButton) {
+//       print (sender.currentTitle!)
+//        showVC(vcName: sender.currentTitle!)
+//    }
+    // не працює, чому? увесь час замість назви кнопки передається nil
     
     @IBAction func snowTapped(_ sender: Any) {
         showVC(vcName: "snow")
     }
-    
-    
+
+
     @IBAction func sparkTapped(_ sender: Any) {
         showVC(vcName: "spark")
     }
-    
+
     @IBAction func fireTapped(_ sender: Any) {
         showVC(vcName: "fire")
     }
