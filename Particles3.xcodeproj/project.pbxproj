@@ -13,6 +13,9 @@
 		60A65FAE293CD44E0017FA51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60A65FAC293CD44E0017FA51 /* Main.storyboard */; };
 		60A65FB0293CD4500017FA51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60A65FAF293CD4500017FA51 /* Assets.xcassets */; };
 		60A65FB3293CD4500017FA51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60A65FB1293CD4500017FA51 /* LaunchScreen.storyboard */; };
+		60A65FBB293CD4950017FA51 /* fire.sks in Resources */ = {isa = PBXBuildFile; fileRef = 60A65FBA293CD4950017FA51 /* fire.sks */; };
+		60A65FBD293CD4AD0017FA51 /* snow.sks in Resources */ = {isa = PBXBuildFile; fileRef = 60A65FBC293CD4AD0017FA51 /* snow.sks */; };
+		60A65FBF293CD4C60017FA51 /* spark.sks in Resources */ = {isa = PBXBuildFile; fileRef = 60A65FBE293CD4C60017FA51 /* spark.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		60A65FAF293CD4500017FA51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60A65FB2293CD4500017FA51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60A65FB4293CD4500017FA51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60A65FBA293CD4950017FA51 /* fire.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = fire.sks; sourceTree = "<group>"; };
+		60A65FBC293CD4AD0017FA51 /* snow.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = snow.sks; sourceTree = "<group>"; };
+		60A65FBE293CD4C60017FA51 /* spark.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = spark.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,9 @@
 				60A65FA6293CD44E0017FA51 /* AppDelegate.swift */,
 				60A65FA8293CD44E0017FA51 /* SceneDelegate.swift */,
 				60A65FAA293CD44E0017FA51 /* ViewController.swift */,
+				60A65FBE293CD4C60017FA51 /* spark.sks */,
+				60A65FBC293CD4AD0017FA51 /* snow.sks */,
+				60A65FBA293CD4950017FA51 /* fire.sks */,
 				60A65FAC293CD44E0017FA51 /* Main.storyboard */,
 				60A65FAF293CD4500017FA51 /* Assets.xcassets */,
 				60A65FB1293CD4500017FA51 /* LaunchScreen.storyboard */,
@@ -126,6 +135,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				60A65FB3293CD4500017FA51 /* LaunchScreen.storyboard in Resources */,
+				60A65FBF293CD4C60017FA51 /* spark.sks in Resources */,
+				60A65FBB293CD4950017FA51 /* fire.sks in Resources */,
+				60A65FBD293CD4AD0017FA51 /* snow.sks in Resources */,
 				60A65FB0293CD4500017FA51 /* Assets.xcassets in Resources */,
 				60A65FAE293CD44E0017FA51 /* Main.storyboard in Resources */,
 			);
